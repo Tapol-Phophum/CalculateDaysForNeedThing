@@ -1,0 +1,61 @@
+﻿<Window x:Class="CalDayForNeedThing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalDayForNeedThing"
+        mc:Ignorable="d"
+        Title="Calculate Days for need to buy somthing" Height="400" Width="800">
+    <Grid>
+        <TextBox x:Name="txtInCome" HorizontalAlignment="Left" Height="35" Margin="314,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Background="#FFEFF394" FontSize="18" UndoLimit="98"/>
+        <TextBox x:Name="txtOutCome" HorizontalAlignment="Left" Height="35" Margin="314,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Background="#FFEFF394" FontSize="18" UndoLimit="98"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="35" Margin="314,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Background="#FFEFF394" FontSize="18" UndoLimit="98"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="166,64,0,0" TextWrapping="Wrap" Text="รายรับ" VerticalAlignment="Top" Width="143" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="166,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="18"><Run Text="ราย"/><Run Text="จ่าย"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="165,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontSize="18" Text="ราคาของที่อยากได้" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.354"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="549,64,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" Width="87" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="549,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" FontSize="18" Text="บาท"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="550,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" FontSize="18" Text="บาท" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.363"/>
+                    <RotateTransform Angle="-0.216"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="txtDayOfkeep" HorizontalAlignment="Left" Height="35" Margin="445,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Background="#FFEFF394" FontSize="18" UndoLimit="98" IsEnabled="False"/>
+        <Button Content="คำนวณ" HorizontalAlignment="Left" Margin="166,245,0,0" VerticalAlignment="Top" Width="121" Height="35" FontSize="20" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="296,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontSize="18" Text="ต้องใช้เวลาเก็บเงิน" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.354"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="600,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" FontSize="18" Text="วัน" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.354"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+    </Grid>
+</Window>
